@@ -1,0 +1,9 @@
+start (
+    set n -> 5
+    set result -> 1
+    loop n (
+        set result -> result * n
+        set n -> n - 1
+    )
+    use-output "Factorial: [result]"
+)

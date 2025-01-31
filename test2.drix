@@ -1,0 +1,4 @@
+start (
+    use-input "What is your name?" -> name
+    use-output "Hello, [name]! "
+)
