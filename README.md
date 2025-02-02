@@ -16,9 +16,9 @@ Drix est un langage de programmation simple, puissant et intuitif, conçu pour �
 ## Exemple de Code
 ```drix
 start (
-    set x -> 10,
-    set y -> 20,
-    set result -> x + y,
+    set x -> 10
+    set y -> 20
+    set result -> x + y
     use-output result
 )
 ```
@@ -29,21 +29,24 @@ start (
 - `set` : Assigne une valeur à une variable.
 - `loop` : Définit une boucle itérative.
 - `use-output` : Affiche une valeur à l'utilisateur.
+- `use-output` : Demande à l'utilisateur d'entrer une valeur.
 
 ### Délimiteurs
 - Les blocs de code sont entourés par `(` et `)`.
-- Les instructions sont séparées par des virgules `,`.
 
 ### Variables
 - Les variables sont dynamiquement typées.
 - L'affectation se fait avec l'opérateur `->`.
+- La concatenation des variables se fait avec `[` et `]`
 
 ## Fonctionnalités du Langage
 ### 1. Variables
 #### Déclaration et Assignation
 ```drix
-set x -> 10,
-set name -> "Drix"
+start (
+   set x -> 10
+   set name -> "Drix"
+)
 ```
 
 #### Utilisation
@@ -51,15 +54,7 @@ set name -> "Drix"
 use-output x
 ```
 
-### 2. Structures Conditionnelles
-```drix
-start (
-    use-input "Quel est votre nom ?" -> name,
-    use-output "Bonjour, " + name + "!"
-)
-```
-
-### 3. Boucles
+### 2. Boucles
 #### Itération Fixe
 ```drix
 loop 3 (
@@ -67,19 +62,19 @@ loop 3 (
 )
 ```
 
-### 4. Entrée/Sortie
+### 3. Entrée/Sortie
 #### Affichage
 ```drix
-use-output "Bonjour, Monde !"
+use-output "Bonjour, tout le monde !"
 ```
 
 #### Entrée utilisateur
 ```drix
-use-input "Entrez votre nom :" -> name,
-use-output "Bienvenue " + name
+use-input "Entrez votre nom :" -> name
+use-output "Bienvenue [name]"
 ```
 
-### 5. Opérations Mathématiques
+### 4. Opérations Mathématiques
 #### Opérateurs Supportés
 - Addition : `+`
 - Soustraction : `-`
@@ -88,8 +83,9 @@ use-output "Bienvenue " + name
 
 #### Exemple
 ```drix
-set result -> 10 + 5,
+set result -> 10 + 5
 use-output result
+
 ```
 
 ## Interprétation du Code
@@ -106,24 +102,24 @@ start (
 )
 ```
 
-### 2. Calcul de Factorielle
+### 2. Calcul de Factoriel
 ```drix
 start (
-    set n -> 5,
-    set result -> 1,
+    set n -> 5
+    set result -> 1
     loop n (
-        set result -> result * n,
+        set result -> result * n
         set n -> n - 1
-    ),
-    use-output "Factorielle : " + result
+    )
+    use-output "Factoriel : " + result
 )
 ```
 
 ### 3. Interaction avec l'Utilisateur
 ```drix
 start (
-    use-input "Quel est votre nom ?" -> name,
-    use-output "Bonjour, " + name + "!"
+    use-input "Quel est votre nom ?" -> name
+    use-output "Bonjour, [name] !"
 )
 ```
 
