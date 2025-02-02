@@ -125,3 +125,5 @@ start (
 
 ## Conclusion
 Drix est un projet initié récemment avec l'objectif de fournir un langage simple et efficace. Cette documentation doit permettre une prise en main rapide et complète du langage.
+
+### Les structures conditionnelles, les boucles infinies et de nombreuses ameliorations sont à venir!
