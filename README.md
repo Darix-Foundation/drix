@@ -111,7 +111,7 @@ start (
         set result -> result * n
         set n -> n - 1
     )
-    use-output "Factoriel : " + result
+    use-output "Factoriel : [result]"
 )
 ```
 
