@@ -29,7 +29,7 @@ start (
 - `set` : Assigne une valeur à une variable.
 - `loop` : Définit une boucle itérative.
 - `use-output` : Affiche une valeur à l'utilisateur.
-- `use-output` : Demande à l'utilisateur d'entrer une valeur.
+- `use-input` : Demande à l'utilisateur d'entrer une valeur.
 
 ### Délimiteurs
 - Les blocs de code sont entourés par `(` et `)`.
