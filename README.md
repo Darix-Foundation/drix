@@ -86,6 +86,11 @@ use-output "Bienvenue [name]"
 set result -> 10 + 5
 use-output result
 
+use-output 10 + 5
+
+a = 10
+a + 5
+use-output a
 ```
 
 ## Interprétation du Code
